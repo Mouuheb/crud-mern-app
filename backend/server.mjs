@@ -27,12 +27,10 @@
 import express from "express";
 import dotenv from "dotenv";
 import { connectDB } from "./config/db.mjs";
-// import pkg from "./config/db.mjs";
 
 
 dotenv.config(); //to read the .env
 const app = express();
-// const { connectDB } = pkg;
 
 app.get("/", (req,res) => {
     res.send("server")
