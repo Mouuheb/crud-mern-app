@@ -26,9 +26,13 @@
 
 import express from "express";
 import dotenv from "dotenv";
+import { connectDB } from "./config/db.mjs";
+// import pkg from "./config/db.mjs";
+
 
 dotenv.config(); //to read the .env
 const app = express();
+// const { connectDB } = pkg;
 
 app.get("/", (req,res) => {
     res.send("server")
@@ -37,5 +41,6 @@ app.get("/", (req,res) => {
 console.log(process.env.MONGO_URI);
 
 app.listen(5000, () =>{
+    connectDB();
     console.log("");
 })
