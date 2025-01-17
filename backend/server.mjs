@@ -85,12 +85,22 @@ import dotenv from "dotenv";
 import { connectDB } from "./config/db.mjs";
 import productRoutes from "./routes/product.mjs";
 
+import cors from "cors";
 
+// var express = require('express')
+// var cors = require('cors')
 
 dotenv.config(); //to read the .env
 const app = express();
 const PORT = process.env.PORT || 5000;
 app.use(express.json()); //to accept json in the body
+
+
+
+
+app.use(cors())
+
+
 
 app.use("/api/products", productRoutes);
 
