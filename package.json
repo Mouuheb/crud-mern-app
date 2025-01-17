@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon backend/server.mjs"
+    "devv": "nodemon backend/server.mjs"
   },
   "keywords": [],
   "author": "",
