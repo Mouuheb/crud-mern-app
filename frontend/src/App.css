@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,210 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+
+* {
+  margin: 0px;
+}
+
+.nav-p {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  width: 90%;
+  height: 10vh;
+  padding: 0 5%;
+}
+
+.nav-p h1{
+  color: rebeccapurple;
+}
+
+
+.nav-p .cmp .btn-p{
+  background-color: blue;
+  margin: 0 2vw;
+  border: solid black 5px;
+  padding: 10px;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: antiquewhite;
+
+}
+
+.nav-p .cmp .btn-s{
+  background-color: blue;
+  margin: 0;
+  border: solid black 5px;
+  padding: 10px;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+
+/* home page */
+.home-p{
+  background-color: aquamarine;
+  min-height: 150vh;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+.home-p .card-cnt{
+  background-color: blueviolet;
+  width: 90%;
+  height: 100%;
+  margin: 5%;
+  border-radius: 1rem;
+  border: solid black 5px;
+  min-height: 80vh;
+  padding: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-p .card-cnt .pr-cnt p{
+  text-align: center;
+}
+
+.card-p{
+  overflow: hidden;
+  width: 20vw;
+  height: 40vh;
+  margin-right:1rem ;
+  margin-bottom: 1rem;
+  border: solid black 5px;
+  border-radius: 1rem;
+}
+.card-p .img-cnt{
+  width: 100%;
+  height: 80%;
+}
+.card-p img{
+  width: 100%;
+  /* height: 100%; */
+  overflow: hidden;
+  z-index: 1;
+}
+
+.card-p .f-card{
+  z-index: 2;
+  display: flex;
+  background-color: aqua;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 5%;
+}
+
+.card-p .f-card .text-cmp h3{
+  color: antiquewhite;
+  margin-bottom: 1rem;
+}
+.card-p .f-card .text-cmp span{
+  color: antiquewhite;
+}
+
+.card-p .f-card .btn-cnt .btn-p{
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: .3rem;
+  border: solid black 1px;
+  color: aqua;
+  background-color: blueviolet;
+}
+.card-p .f-card .btn-cnt .btn-s{
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: .3rem;
+  border: solid black 1px;
+  color: aqua;
+  background-color: blueviolet;
+}
+.card-p .f-card-up{
+  background-color: aquamarine;
+  height: 100%;
+  width: 90%;
+  padding: 5%;
+}
+.card-p .f-card-up .text-cmp{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+}
+.card-p .f-card-up .text-cmp input{
+  width: 95%;
+  height: 20%;
+  border-radius: 1rem;
+  text-align: center;
+  border: solid black .3rem ;
+  
+}
+
+.card-p .f-card-up .btn-cnt{
+  padding: 7% 0;
+  background-color: blue;
+  width: 100%;
+  height: 90%;
+  text-align: center;
+}
+.card-p .f-card-up .btn-cnt .btn-p{
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: .3rem;
+  border: solid black 1px;
+  color: aqua;
+  background-color: blueviolet;
+}
+.card-p .f-card-up .btn-cnt .btn-s{
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: .3rem;
+  border: solid black 1px;
+  color: aqua;
+  background-color: blueviolet;
+}
+
+
+
+/* create */
+
+.create-p{
+  background-color: aquamarine;
+  height: 100%;
+  min-height: 70vh;
+  width: 90%;
+  padding: 5%;
+}
+.create-p .cmp{
+  display: flex;
+  background-color: blue;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30vh;
+}
+.create-p .cmp input{
+  width: 95%;
+  height: 20%;
+  border-radius: 1rem;
+  text-align: center;
+  border: solid black .3rem ;
+  
+}
+
+.create-p .cmp button{
+  padding: 1rem;
+  height: 20%;
+  /* margin-right: 1rem; */
+  border-radius: 1rem;
+  border: solid black 1px;
+  color: aqua;
+  width: 95%;
+  background-color: blueviolet;
 }

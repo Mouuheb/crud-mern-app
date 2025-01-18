@@ -6,8 +6,8 @@ const Navbar = () => {
     <div className='nav-p' >
         <h1>$</h1>
         <div className='cmp'>
-            <Link to={"/"}>Product Store 🛒</Link>
-            <Link to={"/create"}>Create Product 🛒</Link>
+            <Link className='btn-p' to={"/"}>Product Store 🛒</Link>
+            <Link className='btn-s' to={"/create"}>Create Product 🛒</Link>
         </div>
     </div>
   )

@@ -11,7 +11,7 @@ const HomePage = () => {
     }, [fetchProducts]);
     console.log("products", products);
     return (
-        <div>
+        <div className='home-p'>
             <div className='card-cnt'>
                 {products.map((product) => (
                     <div className='card' key={product._id}>

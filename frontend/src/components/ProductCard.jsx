@@ -52,22 +52,24 @@ const ProductCard = ({ product }) => {
     };
     return (
         <div className='card-p'>
+            {up ===false &&(<><div className='img-cnt' >
+                <img src={product.image} alt={product.name} />
+            </div>
 
-            <img src={product.image} alt={product.name} />
             <div className='f-card' >
                 <div className='text-cmp'>
                     <h3>{product.name}</h3>
                     <span>{product.price}</span>
                 </div>
                 <div className='btn-cnt' >
-                    <button onClick={() => setUp(true)} >Edit</button>
-                    <button onClick={() => handleDeleteProduct(product._id)}>Delete</button>
+                    <button className='btn-p' onClick={() => setUp(true)} >Edit</button>
+                    <button className='btn-s' onClick={() => handleDeleteProduct(product._id)}>Delete</button>
                 </div>
-            </div>
+            </div></>)}
 
             {up === true && (
                 <div className='f-card-up'>
-                    <div>
+                    <div className='text-cmp'>
                         <input
                             placeholder='Product Name'
                             name='name'
@@ -89,8 +91,8 @@ const ProductCard = ({ product }) => {
                         />
                     </div>
                     <div className='btn-cnt' >
-                        <button onClick={() => handleUpdateProduct(product._id, updatedProduct)} >Edit</button>
-                        <button onClick={() => handleDeleteProduct(product._id)}>Delete</button>
+                        <button className='btn-p' onClick={() => handleUpdateProduct(product._id, updatedProduct)} >Edit</button>
+                        <button className='btn-s' onClick={() => handleDeleteProduct(product._id)}>Delete</button>
                     </div>
 
                 </div>
