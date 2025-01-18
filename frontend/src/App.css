@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=SUSE:wght@100..800&display=swap');
+
+
+
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -41,13 +46,38 @@
   color: #888;
 } */
 
+:root {
+  --grad:linear-gradient(45deg,
+  #03A688,
+  #011F26,
+  #025E73,
+  #F2668B
+);
+  --c1: #F2668B;
+  --c2: #025E73;
+  --c3: #011F26;
+  --c4: #03A688;
+  --c5: #111111;
+  --c6: #FFFF;
+  --c7: transparent;
+  
+}
 
 * {
   margin: 0px;
+  font-family: "Pixelify Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+}
+body{
+  background-color: var(--c5);
 }
 
 .nav-p {
-  background-color: aqua;
+  /* background-color: aqua; */
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -56,193 +86,208 @@
   width: 90%;
   height: 10vh;
   padding: 0 5%;
+
+  background: var(--grad)
 }
 
-.nav-p h1{
-  color: rebeccapurple;
+.nav-p h1 {
+  color: var(--c1);
 }
 
 
-.nav-p .cmp .btn-p{
-  background-color: blue;
+.nav-p .cmp .btn-p {
+  background-color: var(--c7);
   margin: 0 2vw;
-  border: solid black 5px;
+  border: solid var(--c4) 3px;
   padding: 10px;
   border-radius: 1rem;
   text-decoration: none;
-  color: antiquewhite;
+  color: var(--c4);
 
 }
 
-.nav-p .cmp .btn-s{
-  background-color: blue;
+.nav-p .cmp .btn-s {
+  background-color: var(--c4);
   margin: 0;
-  border: solid black 5px;
+  border: solid var(--c7) 5px;
   padding: 10px;
   border-radius: 1rem;
   text-decoration: none;
-  color: antiquewhite;
+  color: var(--c3);
 }
 
 
 /* home page */
-.home-p{
-  background-color: aquamarine;
+.home-p {
+  background-color: var(--c5);
   min-height: 150vh;
   height: 100%;
   width: 100%;
   margin: 0px;
 }
 
-.home-p .card-cnt{
-  background-color: blueviolet;
+.home-p .card-cnt {
+  background-color: var(--c3);
   width: 90%;
   height: 100%;
   margin: 5%;
   border-radius: 1rem;
-  border: solid black 5px;
+  border: solid var(--c2) 5px;
   min-height: 80vh;
   padding: 20px;
 
   display: flex;
   flex-wrap: wrap;
 }
-.home-p .card-cnt .pr-cnt p{
+
+.home-p .card-cnt .pr-cnt p {
   text-align: center;
 }
 
-.card-p{
+.card-p {
   overflow: hidden;
   width: 20vw;
   height: 40vh;
-  margin-right:1rem ;
+  margin-right: 1rem;
   margin-bottom: 1rem;
-  border: solid black 5px;
+  border: solid var(--c1) 5px;
   border-radius: 1rem;
 }
-.card-p .img-cnt{
+
+.card-p .img-cnt {
   width: 100%;
   height: 80%;
 }
-.card-p img{
+
+.card-p img {
   width: 100%;
   /* height: 100%; */
   overflow: hidden;
   z-index: 1;
 }
 
-.card-p .f-card{
+.card-p .f-card {
   z-index: 2;
   display: flex;
-  background-color: aqua;
+  background-color: var(--c5);
   justify-content: space-between;
   width: 90%;
   margin: 0 5%;
 }
 
-.card-p .f-card .text-cmp h3{
-  color: antiquewhite;
+.card-p .f-card .text-cmp h3 {
+  color: var(--c3);
   margin-bottom: 1rem;
 }
-.card-p .f-card .text-cmp span{
-  color: antiquewhite;
+
+.card-p .f-card .text-cmp span {
+  color: var(--c5);
 }
 
-.card-p .f-card .btn-cnt .btn-p{
+.card-p .f-card .btn-cnt .btn-p {
   padding: 1rem;
   margin-right: 1rem;
   border-radius: .3rem;
-  border: solid black 1px;
-  color: aqua;
-  background-color: blueviolet;
+  border: solid var(--c7) 1px;
+  color: var(--c6);
+  background-color: var(--c4);
 }
-.card-p .f-card .btn-cnt .btn-s{
+
+.card-p .f-card .btn-cnt .btn-s {
   padding: 1rem;
   margin-right: 1rem;
   border-radius: .3rem;
-  border: solid black 1px;
-  color: aqua;
-  background-color: blueviolet;
+  border: solid var(--c7) 1px;
+  color: var(--c6);
+  background-color: var(--c1);
 }
-.card-p .f-card-up{
-  background-color: aquamarine;
+
+.card-p .f-card-up {
+  background-color: var(--c3);
   height: 100%;
   width: 90%;
   padding: 5%;
 }
-.card-p .f-card-up .text-cmp{
+
+.card-p .f-card-up .text-cmp {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 70%;
 }
-.card-p .f-card-up .text-cmp input{
+
+.card-p .f-card-up .text-cmp input {
   width: 95%;
   height: 20%;
   border-radius: 1rem;
   text-align: center;
-  border: solid black .3rem ;
-  
+  color: var(--c3);
+  border: solid var(--c3) 3px;
+
 }
 
-.card-p .f-card-up .btn-cnt{
+.card-p .f-card-up .btn-cnt {
   padding: 7% 0;
-  background-color: blue;
+  background-color: var(--c7);
   width: 100%;
   height: 90%;
   text-align: center;
 }
-.card-p .f-card-up .btn-cnt .btn-p{
+
+.card-p .f-card-up .btn-cnt .btn-p {
   padding: 1rem;
   margin-right: 1rem;
   border-radius: .3rem;
-  border: solid black 1px;
-  color: aqua;
-  background-color: blueviolet;
+  border: solid var(--c7) 1px;
+  color: var(--c6);
+  background-color: var(--c4);
 }
-.card-p .f-card-up .btn-cnt .btn-s{
+
+.card-p .f-card-up .btn-cnt .btn-s {
   padding: 1rem;
   margin-right: 1rem;
   border-radius: .3rem;
-  border: solid black 1px;
-  color: aqua;
-  background-color: blueviolet;
+  border: solid var(--c7) 1px;
+  color: var(--c6);
+  background-color: var(--c1);
 }
 
 
 
 /* create */
 
-.create-p{
-  background-color: aquamarine;
+.create-p {
+  background-color: var(--c3);
   height: 100%;
   min-height: 70vh;
   width: 90%;
   padding: 5%;
 }
-.create-p .cmp{
+
+.create-p .cmp {
   display: flex;
-  background-color: blue;
+  background-color: var(--c7);
   flex-direction: column;
   justify-content: space-between;
   height: 30vh;
 }
-.create-p .cmp input{
+
+.create-p .cmp input {
   width: 95%;
   height: 20%;
   border-radius: 1rem;
   text-align: center;
-  border: solid black .3rem ;
-  
+  border: solid var(--c5) .3rem;
+
 }
 
-.create-p .cmp button{
+.create-p .cmp button {
   padding: 1rem;
   height: 20%;
   /* margin-right: 1rem; */
   border-radius: 1rem;
-  border: solid black 1px;
-  color: aqua;
+  border: solid var(--c5) 1px;
+  color: var(--c3);
   width: 95%;
-  background-color: blueviolet;
+  background-color: var(--c1);
 }
