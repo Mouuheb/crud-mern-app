@@ -13,8 +13,14 @@ const HomePage = () => {
     console.log("products", products);
     return (
         <div className='home-p'>
-            <div style={{ width: '50%', height: '70vh' }}>
-                <Ship/>
+            <div className='model'>
+                <div className='p1'>
+                    <Ship/>
+                </div>
+                <div className='title'>
+                <h1 >The viking store</h1>
+                </div>
+                
             </div>
             <div className='card-cnt'>
                 {products.map((product) => (

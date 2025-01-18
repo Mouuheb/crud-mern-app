@@ -63,6 +63,7 @@
   
 }
 
+
 * {
   margin: 0px;
   font-family: "Pixelify Sans", serif;
@@ -74,24 +75,35 @@
 body{
   background-color: var(--c5);
 }
+.shadow{
+  z-index: 333;
+  background-color: #025E73;
+  margin-bottom: 20px;
+  box-shadow: 0 0px 20px rgba(239, 28, 211, 0.532);
+}
 
 .nav-p {
-  /* background-color: aqua; */
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
   width: 90%;
-  height: 10vh;
+  height: 13vh;
   padding: 0 5%;
 
-  background: var(--grad)
+  background: var(--grad);
+
+  
+
 }
 
 .nav-p h1 {
   color: var(--c1);
+  font-size: 5rem;
+  font-weight: 700;
+  /* color: var(--c4); */
+  text-shadow: 5px 5px 1px var(--c4);
 }
 
 
@@ -103,6 +115,10 @@ body{
   border-radius: 1rem;
   text-decoration: none;
   color: var(--c4);
+  
+  font-size: 2rem;
+  font-weight: 800;
+  text-shadow: 5px 5px 1px #F2668B;
 
 }
 
@@ -113,11 +129,19 @@ body{
   padding: 10px;
   border-radius: 1rem;
   text-decoration: none;
-  color: var(--c3);
+  color: var(--c1);
+
+  font-size: 2rem;
+  font-weight: 800;
+  /* color: var(--c4); */
+  text-shadow: 5px 5px 1px var(--c3);
 }
 
 
 /* home page */
+
+
+
 .home-p {
   background-color: var(--c5);
   min-height: 150vh;
@@ -126,18 +150,52 @@ body{
   margin: 0px;
 }
 
+.home-p .model{
+  
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  /* justifyContent:'space-between'; */
+}
+.home-p .model .p1{
+  width: 60%;
+  /* background-color: #03A688; */
+  height: 70vh;
+  align-items: center;
+
+}
+.home-p .model .title{
+  padding: 10% 0;
+}
+.home-p .model div h1{
+  text-align: center;
+  font-size: 8rem;
+  font-weight: 800;
+  color: var(--c4);
+  text-shadow: 5px 5px 1px #F2668B;
+
+}
+
+
+
+
 .home-p .card-cnt {
   background-color: var(--c3);
   width: 90%;
   height: 100%;
-  margin: 5%;
-  border-radius: 1rem;
-  border: solid var(--c2) 5px;
+  margin: 2%;
+  /* border-radius: 1rem; */
+  border: solid var(--c4) 5px;
   min-height: 80vh;
   padding: 20px;
 
   display: flex;
   flex-wrap: wrap;
+
+  /* font-size: 8rem;
+  font-weight: 800;
+  color: var(--c4); */
+  box-shadow: 15px 15px 1px  var(--c1);
 }
 
 .home-p .card-cnt .pr-cnt p {
@@ -151,7 +209,10 @@ body{
   margin-right: 1rem;
   margin-bottom: 1rem;
   border: solid var(--c1) 5px;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
+  box-shadow: 5px 5px 1px  var(--c4);
+
+
 }
 
 .card-p .img-cnt {
@@ -257,7 +318,7 @@ body{
 /* create */
 
 .create-p {
-  background-color: var(--c3);
+  background-color: var(--c5);
   height: 100%;
   min-height: 70vh;
   width: 90%;
@@ -269,25 +330,35 @@ body{
   background-color: var(--c7);
   flex-direction: column;
   justify-content: space-between;
-  height: 30vh;
+  height: 55vh;
 }
 
 .create-p .cmp input {
   width: 95%;
   height: 20%;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
+  margin-bottom: 1rem;
   text-align: center;
-  border: solid var(--c5) .3rem;
+  border: solid var(--c4) .3rem;
+  box-shadow: 5px 5px 1px  var(--c1);
+  font-size: 3rem;
 
 }
 
 .create-p .cmp button {
-  padding: 1rem;
-  height: 20%;
+  /* padding: 1rem; */
+  
+  height: 30%;
   /* margin-right: 1rem; */
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   border: solid var(--c5) 1px;
   color: var(--c3);
-  width: 95%;
+  width: 50%;
+  text-align: center;
+  margin: 2rem 25%;
   background-color: var(--c1);
+  box-shadow: 5px 5px 1px  var(--c4);
+  color: var(--c3);
+  font-size: 5rem;
+  text-shadow: 3px 3px 1px  var(--c2);
 }

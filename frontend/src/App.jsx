@@ -9,7 +9,11 @@ function App() {
 
   return (
     <>
+      <div className="shadow">
       <Navbar />
+
+      </div>
+      
       
 			<Routes>
 				<Route path='/' element={<HomePage />} />
