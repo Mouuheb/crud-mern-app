@@ -3,6 +3,7 @@ import { useEffect} from "react";
 import { Link } from "react-router-dom";
 import { useProductStore } from "../store/product";
 import ProductCard from "../components/ProductCard";
+import Ship from "../model/Ship";
 
 const HomePage = () => {
     const { fetchProducts, products } = useProductStore();
@@ -12,6 +13,9 @@ const HomePage = () => {
     console.log("products", products);
     return (
         <div className='home-p'>
+            <div style={{ width: '50%', height: '70vh' }}>
+                <Ship/>
+            </div>
             <div className='card-cnt'>
                 {products.map((product) => (
                     <div className='card' key={product._id}>
